@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import Analytics from "./analytics";
 
 type Voice = {
   id: string;      // React 用ユニークID
@@ -354,6 +355,7 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-sky-50 text-slate-800">
+      <Analytics />
       {/* ふわふわ背景 */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-pink-200/60 blur-3xl" />
