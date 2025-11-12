@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
-import Analytics from "./analytics";
 
 type Voice = {
   id: string;      // React 用ユニークID
@@ -355,7 +354,6 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-sky-50 text-slate-800">
-      <Analytics />
       {/* ふわふわ背景 */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-pink-200/60 blur-3xl" />
@@ -460,7 +458,7 @@ export default function Page() {
               {/* 右上の小さなチップ */}
               <div className="pointer-events-none absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold text-pink-500 shadow-sm shadow-pink-200/80">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>web sample</span>
+                <span>星川サラ</span>
               </div>
 
               {/* 左下の「tapで再生」吹き出し */}
